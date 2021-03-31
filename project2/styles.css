@@ -1,0 +1,337 @@
+html {
+    box-sizing:border-box;
+}
+
+*, *:before, *:after {
+    box-sizing:inherit;
+}
+
+img {
+    max-width: 90%;
+}
+
+.container {
+    font-family: 'Raleway', sans-serif;
+    display: grid;
+    grid-gap: 15px;
+    margin: 20px;
+    padding:3px;
+    grid-auto-flow: dense;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 45px 150px 1320px 350px 500px 1800px 400px 150px;
+    grid-template-areas: 
+        "sidebar sidebar sidebar"
+        "kimcao101 kimcao101 kimcao101"
+        "img1 img2 img3"
+        "background backgroundcontent backgroundcontent"
+        "education educationcontent educationcontent"
+        "hobbies hobbiescontent hobbiescontent"
+        "ambitions ambitionscontent ambitionscontent"
+        "footer footer footer"
+}
+
+/* The side navigation menu */
+.sidebar {
+  grid-area: sidebar;
+  width: 100%;
+  height: auto;
+  background-color: #e6edd1;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px; 
+}
+.sidebar a {
+  float: left;
+  padding: 12px;
+  color: #00552E;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; 
+  text-align: center;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px; 
+}
+ 
+.sidebar a.active {
+  background-color: #bdeb34;
+}
+
+.sidebar a:hover {
+  background-color: #000;
+}
+
+/* Font */
+
+p {
+    font-size: 1.4em;
+    font-weight:400;
+    line-height: 2;
+    color: #00552E;
+    text-align: left;
+    padding: 10px;
+    width: 80%;
+    position: relative;
+    margin:auto;
+    }
+
+
+
+li {
+    color: #82b2ff;
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 90px;
+}
+
+/* Table */
+
+table, th, td {
+    font-weight: 200;
+    font-size: 1.4em;
+    margin: 30px auto;
+    border: 1px solid #00552E;
+    padding: 5px;
+    align-content: center;
+    text-align: center
+}
+
+td {
+    border: 1px dashed #00552E;
+}
+
+th {font-weight: 400;
+    background-color: #F5FDE7;}
+
+
+#img1 {
+    background-color: lightcyan;
+    grid-area:img1;
+}
+
+#img2 {
+    background-color: lightpink;
+    grid-area:img2;
+}
+
+#img3 {
+    background-color: lightgoldenrodyellow;
+    grid-area:img3; 
+}
+
+#kimcao101 {
+    
+    grid-area:kimcao101;
+    font-size: 50px;
+    font-weight:900;
+    color:#00552E;
+    letter-spacing: 0.25em;
+    text-align: center;
+    padding: 15px;
+    text-shadow: 5px 4px 0px #FEF1B3;
+    width: auto;
+}
+
+#background {
+    background-color: #ecf7d7;
+    grid-area:background;
+    font-size: 45px;
+    font-weight: 800;
+    text-align: center;
+    color: #bdeb34;
+    padding: 10px;
+}
+
+#backgroundcontent {
+    grid-area:backgroundcontent;
+
+}
+
+#education {
+    background-color: #fae1dc;
+    grid-area:education;
+    font-size: 45px;
+    font-weight: 800;
+    text-align: center;
+    color: deeppink;
+    padding: 10px;
+}
+
+#educationcontent {
+   
+    grid-area:educationcontent;
+}
+
+#hobbies {
+    background-color: #e6f8fc;
+    grid-area:hobbies;
+    font-size: 45px;
+    font-weight: 800;
+    text-align: center;
+    color: #82b2ff;
+    padding: 10px;
+}
+
+#hobbiescontent {
+    
+    grid-area:hobbiescontent;
+}
+
+#ambitions {
+    background-color: #faead9;
+    grid-area:ambitions;
+    font-size: 45px;
+    font-weight: 800;
+    text-align: center;
+    color: coral;
+    padding: 10px;
+}
+
+#ambitionscontent {
+    grid-area:ambitionscontent;
+}
+
+footer {
+    background-color: #e6edd1;
+    grid-area:footer;
+    text-align: center;
+    font-size: 18px;
+    font-weight:400;
+    line-height: 2;
+    color: #00552E;
+    padding: 10px;
+    position: relative;
+    margin: none;
+    
+}
+
+@media only screen and (max-width:1200px){
+    .container{
+        
+        margin: 10px;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 45px 100px 1000px 80px 400px 80px 550px 80px 1850px 80px 400px 200px;
+        grid-template-areas: 
+            "sidebar sidebar sidebar"
+            "kimcao101 kimcao101 kimcao101"
+            "img1 img2 img3"
+            "background background background"
+            "backgroundcontent backgroundcontent backgroundcontent" "education education education"
+            "educationcontent educationcontent educationcontent"
+            "hobbies hobbies hobbies"
+            "hobbiescontent hobbiescontent hobbiescontent"
+            "ambitions ambitions ambitions"
+            "ambitionscontent ambitionscontent ambitionscontent"
+            "footer footer footer"
+    }
+    
+/* The side navigation menu */
+.sidebar {
+  grid-area: sidebar;
+  width: 100%;
+  height: auto;
+  background-color: #e6edd1;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px; 
+}
+.sidebar a {
+  float: left;
+  padding: 12px;
+  color: #00552E;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; 
+  text-align: center;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px; 
+}
+ 
+.sidebar a.active {
+  background-color: #bdeb34;
+}
+
+.sidebar a:hover {
+  background-color: #000;
+}
+
+ p {
+    padding: 0.05px;
+    width: 80%;
+    }
+
+}
+
+@media only screen and (max-width:750px){
+    .container{
+        margin: 5px;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 180px 170px 600px 80px 350px 80px 550px 80px 1700px 80px 250px 230px;
+        grid-template-areas: 
+            "sidebar sidebar sidebar"
+            "kimcao101 kimcao101 kimcao101"
+            "img1 img2 img3"
+            "background background background"
+            "backgroundcontent backgroundcontent backgroundcontent" "education education education"
+            "educationcontent educationcontent educationcontent"
+            "hobbies hobbies hobbies"
+            "hobbiescontent hobbiescontent hobbiescontent"
+            "ambitions ambitions ambitions"
+            "ambitionscontent ambitionscontent ambitionscontent"
+            "footer footer footer"
+    }
+    
+/* The side navigation menu */
+    
+    .sidebar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+        
+  }
+    p {
+    font-size: 1em;
+    font-weight:400;
+    line-height: 1.74;
+    color: #00552E;
+    text-align:left;
+    padding: 0.05px;
+    width: 90%;
+    position: relative;
+    margin:auto;
+    }
+table, th, td {
+    font-weight: 200;
+    font-size: 1em;
+    margin: 30px auto;
+    border: 1px solid #00552E;
+    padding: 5px;
+    align-content: center;
+    text-align: center
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
